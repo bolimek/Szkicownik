@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkicownik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+     <h1 class="header__heading">Sketchbook</h1>
+     <ul class="header__tools">
+       <li class="tool">
+         <label for="pencil-color" class="tool__label">Pencil color:</label>
+         <input type="color" name="pencil-color" id="pencil-color" class="tool__input">
+       </li>
+       <li class="tool">
+        <label for="background-color" class="tool__label">Background color:</label>
+        <input type="color" name="background-color" id="background-color" class="tool__input" value="#ffffff">
+       </li>
+       <li class="tool">
+        <label for="pencil-size" class="tool__label">Pencil size:</label>
+        <input type="number" name="pencil-size" id="pencil-size" class="tool__input" value="10" step="1">
+       </li>
+       <li class="tool">
+        <button class="tool__button" data-clear-btn>Clear</button>
+        <button class="tool__button" data-save-btn>Save</button>
+       </li>
+     </ul>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA==" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
